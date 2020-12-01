@@ -3,7 +3,6 @@
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
             <br>
-            
         <h3 style="font-family: arial-black">Budang Branches</h3>
         </div>
     </div>
@@ -22,11 +21,14 @@
                         <tr>
                           
                           <td><a href="/stores/{{ $store->branch }}/show">{{ $store->branch }}</a></td>
-                          <td><a href="/stores" target="_blank">{{ $store->address }}</td>
+                          <td><a href="/stores/{{ $store->address }}/show">{{ $store->address }}</a></td>
                         </tr>                       
                       @endforeach
                   </tbody>
               </table>
+            </div>
+          </div>
+        </div>
     </div>
 </div>
 @endsection
